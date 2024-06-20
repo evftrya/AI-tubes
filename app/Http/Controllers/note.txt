@@ -1,0 +1,10 @@
+for($q=0;$q<count($temp3);$q++){
+                        // dd($hasil);
+                        array_push($exept,$temp3[$q]);
+                        array_push($hasil[$n][1],array());
+                        array_push($hasil[$n][1][$q],$temp3[$q]);
+                        $exept2=$exept;
+                        array_push($exept2,$temp3[$q]);
+                        $temp3 = $this->LookTetangga($temp3[$q],$exept2);
+                        // dd($ceks,$temp3,$temp3[$q],$temp3,$exept2,$hasil);
+                    }
